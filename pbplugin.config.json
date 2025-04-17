@@ -1,0 +1,45 @@
+{
+	"general": {
+			"workdir": "e:\\pbapps\\pbplugin.work",
+			"pborcadll": "pborc.dll"
+	},
+		
+	"target": [
+		{
+			"name": "target_search_object",
+			"text": "&Search for Object...",
+			"cmd": "tools\\target\\target_search_object\\target_search_object.exe",
+			"post_action": "open_file",
+			"wait": true
+		},
+		{	"separator": true },
+		{
+			"name": "target_open_folder",
+			"text": "&Open folder...",
+			"cmd": "tools\\target\\target_open_folder\\target_open_folder.exe",
+			"post_action": "none",
+			"wait": true
+		}
+	],
+	
+	"pbl": [
+	],
+	
+	"datawindow": [
+		{
+			"name": "dw_create_dto",
+			"text": "&Create DTO",
+			"cmd": "tools\\datawindow\\dw_create_dto\\dw_create_dto.exe",
+			"post_action": "import_objects",
+			"wait": true,
+			"hidden": true
+		},
+		{
+			"name": "dw_generate_setitem",
+			"text": "&Generate SetItem...",
+			"cmd": "tools\\datawindow\\dw_generate_setitem\\dw_generate_setitem.exe",
+			"post_action": "paste_from_file",
+			"wait": true
+		}
+	]	
+}

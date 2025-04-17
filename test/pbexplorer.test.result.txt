@@ -1,0 +1,15 @@
+2018-05-04 15:52:43 .. PBTEST STARTED
+2018-05-04 15:52:43 .. Application: pbexplorer
+2018-05-04 15:52:43 .. Executing TestSuite: n_suite_pbexplorer_all
+2018-05-04 15:52:43 .. Executing TestSuite: n_suite_string_functions
+2018-05-04 15:52:43 ..   Executing TestCase: n_test_f_empty
+2018-05-04 15:52:43 ..     Executing TestMethod: test_true_if_string_empty
+2018-05-04 15:52:43 ..       -> result: passed :)
+2018-05-04 15:52:43 ..     Executing TestMethod: test_true_if_string_null
+2018-05-04 15:52:43 ..       -> result: passed :)
+2018-05-04 15:52:43 ..     Executing TestMethod: test_true_if_string_spaces
+2018-05-04 15:52:43 ..       -> result: passed :)
+2018-05-04 15:52:43 ..     Executing TestMethod: test_false_if_string_not_empty
+2018-05-04 15:52:43 ..       -> result: passed :)
+2018-05-04 15:52:43 .. FINAL RESULT: 4 tests, 4 passed, 0 failed.
+2018-05-04 15:52:43 .. STATUS: PASSED

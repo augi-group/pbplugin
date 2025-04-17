@@ -1,0 +1,6 @@
+Save Format v3.0(19990112)
+@begin Targets
+ 0 "target_open_folder.pbt";
+@end;
+DefaultTarget "target_open_folder.pbt";
+DefaultRemoteTarget "target_open_folder.pbt";

@@ -1,0 +1,9 @@
+global type s_par_stampaeti from structure
+	string		prn
+	string		tyeti
+	string		formato
+	integer		nrocopie
+	u_nomeval		var
+	u_array		dati
+end type
+

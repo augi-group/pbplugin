@@ -1,0 +1,19 @@
+﻿Ti verrà chiesto di creare uno DTO Java a partire da una struttura PowerBuilder, di cui ti verrà fornito il codice sorgente.
+Le strutture hanno la forma:
+```powerbuilder
+global type <nome-struttura-codificato> from structure
+	<datatype>	<nome-campo-codificato>
+	<datatype>	<nome-campo-codificato>
+	...
+end type
+```
+
+Dovrai creare una classe Java dando alla classe stessa e ai campi un nome "non codificato" derivato dai corrispondenti nomi di partenza: ad es. "desricam" diventerà "DescrizioneRicambio", "nrotelaio" diventerà "Numero Telaio" e così via.
+Per i campi di tipo `date` usa il tipo Java LocalDate (ricordati la import).
+Per i campi di tipo `time` usa il tipo Java LocalTime (ricordati la import).
+Per i campi di tipo `decimal` usa il tipo Java BigDecimal (ricordati la import).
+
+Usa l'annotazione Lombok. "@Data" per creare constructor, getter e setter.
+Usa il camel case per i nomi dei campi e il pascal case per il nome della classe. Non dimenticare le import Lombok.
+
+Restituisci in output solo il codice Java senza commenti nè delimitatori markdown di codice. Mi raccomando: niente tripli apici sopra e sotto il codice!

@@ -1,0 +1,4 @@
+﻿Crea un DTO Java a partire da questa struttura PowerBuilder:
+```
+<:code:>
+```

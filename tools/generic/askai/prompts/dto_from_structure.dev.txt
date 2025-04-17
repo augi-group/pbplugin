@@ -1,0 +1,61 @@
+﻿Ti verrà chiesto di creare uno userobject a partire da una struttura, di cui ti verrà fornito il codice sorgente.
+
+Gli oggetti di cui si sta parlando sono scritti in PowerBuilder.
+Le strutture hanno la forma:
+```powerbuilder
+global type <nome-struttura> from structure
+	<datatype>	<nome-campo>
+	<datatype>	<nome-campo>
+	...
+end type
+```
+Il codice di una struttura può essere preceduto dall'header di esportazione così fatto:
+```powerbuilder
+$PBExportHeader$<nome-struttura>.srs
+$PBExportComments$<descrizione-contenuto-struttura>
+```
+Lo user-object che dovrai generare una instance variable pubblica per ogni campo; ad esempio `string <nome-campo>` diventerà `string is_<nome-campo>`. Segui le naming convention di PowerBuilder per i tipi di dato (es. string is_<nome>, integer ii_<nome>, long il_<nome> ecc.).
+
+Le variabili d'istanza usano il prefisso "i" + un carattere che identifica il tipo di dato secondo le naming convention di PowerBuilder (es. is_<nome>) mentre gli argomenti di funzioni il prefisso "a" (es. as_<nome>).
+
+Per ciascun campo dovrai creare due metodi pubblici aventi il nome del campo: un setter e un getter.
+I getter ed i setter dovranno avere nome pari al nome iniziale del campo, **senza "get_" o "set_" iniziali**; avendo parametri diversi non ci saranno problemi di omonimia grazie al function overloading di PowerBuilder. Il setter riceverà il valore del campo come argomento e imposterà la corrispondente variabile pubblica; il getter restituirà il valore contenuto nella corrispondente variabile pubblica.
+Nel caso in cui un campo sia un array, il setter dovrà ricevere in input un array e il getter restituire la corrispondente variabile pubblica che sarà un array; attenzione a restituire, solo nel getter, il tipo `any` di PowerBuilder in questo caso. La dichiarazione della instance variabile dovrà essere fatta con il tipo di dati originale.
+Se la struttura si chiama `s_<nome>`, lo userobject si chiamerà `n_<nome>`.
+
+In cima al codice dovrai inserire l'header di esportazione così fatto:
+
+```powerbuilder
+$PBExportHeader$<nome-userobject>.sru
+$PBExportComments$<descrizione-contenuto-userobject>
+```
+
+Il formato del codice di uno user-object PowerBuilder è del tipo:
+```powerbuilder
+forward
+global type <nome-userobject> from nonvisualobject
+end type
+end forward
+
+global type <nome-userobject> from nonvisualobject
+end type
+global <nome-userobject> <nome-userobject>
+
+type variables
+public:
+<elenco-delle-instance-variables-pubbliche>
+end variables
+
+forward prototypes
+public function <tipo-dato-restituito> <nome-funzione>(<parametri>)
+public function <tipo-dato-restituito> <nome-funzione>(<parametri>)
+public subroutine <nome-subroutine>(<parametri>)
+...
+end prototypes
+
+<codice-funzioni-e-subroutine-vero-e-proprio>
+```
+
+Le funzioni che non restituiscono nulla vengono chiamate `subroutine`. Quindi i setter saranno subroutine.
+Puoi ricavare <descrizione-contenuto-userobject> da <descrizione-contenuto-struttura> sostituendo il termine "Struttura" con "Oggetto".
+Restituisci in output solo il codice PowerBuilder senza commenti nè delimitatori markdown di codice. Usa CR-LF (dos-like) per separare le righe, non solo LF. Mi raccomando: niente tripli apici sopra e sotto il codice!

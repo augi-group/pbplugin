@@ -1,0 +1,13 @@
+global type s_mglric_par_calcolo_scorte from structure
+	string		tyscorta
+	string		codmarca
+	string		codmodel
+	string		codtyart
+	string		identmarcainfocar
+	string		identmodelinfocar
+	string		identverinfocar
+	string		iddiz
+	string		codricamori
+	string		desricam
+end type
+

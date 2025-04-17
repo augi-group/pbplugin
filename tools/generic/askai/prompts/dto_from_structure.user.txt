@@ -1,0 +1,7 @@
+﻿Crea lo userobject corrispondente a questa struttura:
+```
+<:code:>
+```
+
+
+

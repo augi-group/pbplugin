@@ -1,0 +1,6 @@
+Save Format v3.0(19990112)
+@begin Targets
+ 0 "dw_create_dto.pbt";
+@end;
+DefaultTarget "dw_create_dto.pbt";
+DefaultRemoteTarget "dw_create_dto.pbt";

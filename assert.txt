@@ -1,0 +1,29 @@
+Assertion failed on 08-12-2020 at 21:09:28
+Context: n_command_loader::of_load
+Message: Command not found or not correctly specified: dw_create_activerecord.
+Check your configuration file.
+
+Assertion failed on 08-04-2021 at 01:21:30
+Context: n_command_loader::of_load
+Message: Command not found or not correctly specified: target_cerca_oggetto.
+Check your configuration file.
+
+Assertion failed on 08-04-2021 at 01:22:53
+Context: n_command_loader::of_load
+Message: Command not found or not correctly specified: pbl_crea_deferr.
+Check your configuration file.
+
+Assertion failed on 08-04-2021 at 15:01:03
+Context: n_command_loader::of_load
+Message: Command not found or not correctly specified: pbl_crea_deferr.
+Check your configuration file.
+
+Assertion failed on 12-04-2025 at 23:21:55
+Context: n_command_loader::of_load
+Message: Command not found or not correctly specified: structure_create_java_dto.
+Check your configuration file.
+
+Assertion failed on 14-04-2025 at 01:13:03
+Context: n_askai::of_load_prompt
+Message: Title file dto_from_structure.title.txt not found.
+

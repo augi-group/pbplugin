@@ -1,0 +1,28 @@
+Assertion failed on 13-04-2025 at 09:11:54
+Context: n_askai::of_load_prompt
+Message: Title file prompts\.title.txt not found.
+
+Assertion failed on 14-04-2025 at 01:01:11
+Context: n_askai::of_load_prompt
+Message: Title file prompts\.title.txt not found.
+
+Assertion failed on 14-04-2025 at 01:01:24
+Context: n_askai::of_load_prompt
+Message: Title file prompts\.title.txt not found.
+
+Assertion failed on 14-04-2025 at 01:04:00
+Context: n_askai::of_load_prompt
+Message: Title file E:\pbapps\pbplugin\tools\generic\askai\prompts\.title.txt not found.
+
+Assertion failed on 14-04-2025 at 01:04:22
+Context: n_askai::of_load_prompt
+Message: Title file prompts\.title.txt not found.
+
+Assertion failed on 14-04-2025 at 01:12:49
+Context: n_askai::of_load_prompt
+Message: Title file .title.txt not found.
+
+Assertion failed on 14-04-2025 at 01:15:37
+Context: n_askai::of_load_prompt
+Message: Title file e:\pbapps\pbplugin\tools\generic\askai\prompts\.title.txt not found.
+
